@@ -146,6 +146,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 .wrap #container .product_list .product .productimg {
   width: 100%;
@@ -180,7 +181,7 @@ body {
   color: #a0a0a0;
 }
 .wrap #container .product_list .product .product_info .shop_product_price {
-  margin: 17px 0 32px;
+  margin: 17px 0;
   height: 33px;
 }
 .wrap #container .product_list .product .product_info .shop_product_price .product_original_price {
