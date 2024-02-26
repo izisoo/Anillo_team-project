@@ -167,22 +167,24 @@ body {
 .wrap #container .product_list .product .product_info {
   text-align: center;
   margin: 17px;
-  height: 200px;
   position: relative;
 }
 .wrap #container .product_list .product .product_info h3 {
   margin-bottom: 17px;
+  height: 55px;
 }
 .wrap #container .product_list .product .product_info .product_name {
-  margin-bottom: 17px;
+  height: 28px;
   color: #a0a0a0;
 }
 .wrap #container .product_list .product .product_info .shop_product_price {
-  margin-bottom: 32px;
+  margin: 17px 0 32px;
+  height: 33px;
 }
 .wrap #container .product_list .product .product_info .shop_product_price .product_original_price {
   color: #a0a0a0;
   text-decoration: line-through;
+  margin-bottom: 5px;
 }
 .wrap #container .product_list .product .product_info .shop_product_price .product_price {
   font-family: "Futura PT";
@@ -190,9 +192,6 @@ body {
 .wrap #container .product_list .product .product_info .button_pc_nobg {
   width: 185px;
   height: 45px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   border: 1px solid #1e1e1e;
   font: normal 14px/1 "Futura PT";
   background: none;
@@ -226,9 +225,6 @@ body {
   }
   .wrap #container .product_list .product .productimg .shop_product_thumbnail_hover {
     display: none;
-  }
-  .wrap #container .product_list .product .product_info h4 {
-    margin-bottom: 14px;
   }
 }
 @media screen and (max-width: 768px) {

@@ -39,32 +39,34 @@
         .product_info {
           text-align: center;
           margin: 17px;
-          height: 200px;
           position: relative;
           h3 {
             margin-bottom: 17px;
+            height: 55px;
           }
           .product_name {
-            margin-bottom: 17px;
+            height: 28px;
             color: $Textcolor-gray;
           }
           .shop_product_price {
-            margin-bottom: 32px;
+            margin: 17px 0 32px;
+            height: 33px;
             .product_original_price {
               color: $Textcolor-gray;
               text-decoration: line-through;
+              margin-bottom: 5px;
             }
             .product_price {
               font-family: "Futura PT";
             }
-            
           }
           .button_pc_nobg {
             width: 185px;
             height: 45px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
+            // position: absolute;
+            // bottom: 0;
+            // left: 0;
+            // transform: translate(-50% -50%);
             border: 1px solid $Textcolor-black;
             font: normal 14px/1 "Futura PT";
             background: none;
@@ -99,11 +101,6 @@
             }
             .shop_product_thumbnail_hover {
               display: none;
-            }
-          }
-          .product_info {
-            h4 {
-              margin-bottom: 14px;
             }
           }
         }
