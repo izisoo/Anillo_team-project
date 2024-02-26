@@ -125,15 +125,18 @@ body {
   width: 100%;
 }
 
-body {
+.wrap {
   width: 100%;
+}
+.wrap #container {
+  width: 75%;
 }
 
 @media screen and (max-width: 1200px) {
   .wrap {
     width: 100%;
   }
-  .wrap .container {
+  .wrap #container {
     width: 100%;
   }
 }
@@ -142,7 +145,7 @@ body {
     width: 100%;
     min-width: 390px;
   }
-  .wrap .container {
+  .wrap #container {
     width: 100%;
   }
 }/*# sourceMappingURL=modify.css.map */
