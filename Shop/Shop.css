@@ -144,6 +144,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .wrap #container .product_list .product .productimg {
   width: 100%;
@@ -189,7 +191,7 @@ body {
 .wrap #container .product_list .product .product_info .shop_product_price .product_price {
   font-family: "Futura PT";
 }
-.wrap #container .product_list .product .product_info .button_pc_nobg {
+.wrap #container .product_list .product .button_pc_nobg {
   width: 185px;
   height: 45px;
   border: 1px solid #1e1e1e;
@@ -197,7 +199,7 @@ body {
   background: none;
   cursor: pointer;
 }
-.wrap #container .product_list .product .product_info .button_pc_nobg:hover {
+.wrap #container .product_list .product .button_pc_nobg:hover {
   background: #1e1e1e;
   color: #fff;
 }
