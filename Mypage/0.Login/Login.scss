@@ -5,6 +5,47 @@
   width: 100%;
   #container {
     width: 75%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logindata {
+      width: 580px;
+      border: 1px solid $Color-stroke;
+      margin: 0 auto 3px auto;
+      padding: 80px 0 50px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .login_idpw {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        input {
+          overflow: hidden;
+          width: 263px;
+          height: 32px;
+          margin-bottom: 2px;
+          padding-left: 10px;
+          border: 1px solid $Color-stroke;
+          color: $Textcolor-gray;
+          font: normal 12px/1 "Futura PT";
+        }
+      }
+      .login_button {
+        width: 100px;
+        height: 68px;
+        background: $Textcolor-black;
+        border: 1px solid $Textcolor-black;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 3px;
+        font: normal 12px/1 "Futura PT";
+        margin-left: 5px;
+      }
+    }
   }
 }
 
