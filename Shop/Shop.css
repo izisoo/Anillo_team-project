@@ -102,6 +102,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 #header #header_contents button {
   border: none;
@@ -136,6 +137,12 @@ body {
   margin-left: 10px;
   display: none;
 }
+#header #header_contents .header_logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 #header #header_contents .header_logo img {
   width: 60px;
   height: 60px;
@@ -159,6 +166,10 @@ body {
     display: none;
   }
   #header #header_contents .header_logo {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
     width: 64px;
     height: 64px;
   }
