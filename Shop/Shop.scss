@@ -141,5 +141,13 @@
         }
       }
     }
+    #gnb {
+      .gnb_container {
+        &:nth-child(2) {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
   }
 }
