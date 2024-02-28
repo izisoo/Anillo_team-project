@@ -1,27 +1,29 @@
 @import "../../common.scss";
 
 //==========PC==========//
-body {
+.wrap {
   width: 100%;
+  #container {
+    width: 75%;
+  }
 }
 
 //==========Tablet==========//
 @media screen and (max-width: 1200px) {
   .wrap {
     width: 100%;
-    .container {
+    #container {
       width: 100%;
     }
   }
 }
-
 
 //==========Mobile==========//
 @media screen and (max-width: 768px) {
   .wrap {
     width: 100%;
     min-width: 390px;
-    .container {
+    #container {
       width: 100%;
     }
   }

@@ -256,10 +256,9 @@ body {
   height: auto;
 }
 .wrap #container {
-  width: 580px;
+  width: 75%;
   height: auto;
-  margin: 100px auto;
-  padding: 80px 0 100px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -269,6 +268,7 @@ body {
 .wrap #container .logindata {
   width: 580px;
   margin: 0 auto 3px auto;
+  padding: 80px 0 5px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,54 +302,57 @@ body {
 }
 .wrap #container .login_second {
   width: 360px;
-  font-size: 13px;
 }
 .wrap #container .login_second span {
   margin-left: 10px;
 }
 .wrap #container .login_anchor {
-  width: 440px;
+  width: 400px;
   display: flex;
   justify-content: space-around;
-  margin: 10px 0 20px;
-  font-size: 13px;
-  color: #a0a0a0;
-}
-.wrap #container .login_anchor a:hover {
-  color: #1e1e1e;
+  margin: 20px 0;
 }
 .wrap #container .loginsnsbutton {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 370px;
+  width: 360px;
+  border: 1px solid red;
 }
 .wrap #container .loginsnsbutton div {
   width: 176px;
-  height: 31px;
+  height: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 13px;
-  border-radius: 3px;
-}
-.wrap #container .loginsnsbutton div img {
-  width: 25%;
-  text-align: center;
-  border-right: 1px solid #fafaf6;
-}
-.wrap #container .loginsnsbutton div span {
-  width: 75%;
-  text-align: center;
 }
 .wrap #container .loginsnsbutton .naver {
   background: #26C826;
   color: #fff;
 }
+.wrap #container .loginsnsbutton .naver img {
+  width: 50px;
+  height: 50px;
+  border-right: #fff;
+}
 .wrap #container .loginsnsbutton .kakao {
   background: #FFEB00;
 }
+.wrap #container .loginsnsbutton .kakao img {
+  width: 50px;
+  height: 50px;
+  border-right: #fff;
+}
 
+@media screen and (max-width: 1200px) {
+  .wrap {
+    width: 100%;
+  }
+  .wrap #container {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .wrap {
     width: 100%;
