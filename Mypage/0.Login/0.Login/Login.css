@@ -1,0 +1,361 @@
+@import url("https://fonts.cdnfonts.com/css/futura-pt");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font: normal 36px/1 "Playfair Display";
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+
+h2 {
+  font: normal 28px/1 "Futura PT";
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+h3 {
+  font: normal 18px/1 "Futura PT";
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 40px;
+    line-height: 2.5rem;
+  }
+}
+
+h4 {
+  font: normal 14px/1 "Noto Sans KR";
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 33px;
+    line-height: 2.5rem;
+  }
+}
+
+h5 {
+  font: normal 11px/1 "Noto Sans KR";
+}
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 30px;
+    line-height: 2.5rem;
+  }
+}
+
+body {
+  background: #fafaf6;
+}
+
+#header {
+  width: 100%;
+  min-width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#header #header_popup {
+  width: 100%;
+  height: 32px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #83a2c1;
+  color: #fff;
+}
+#header #header_popup img {
+  width: 18px;
+  height: 18px;
+}
+#header #header_popup img:nth-child(1) {
+  opacity: 0;
+}
+#header #header_popup img:last-child {
+  filter: invert(1);
+}
+#header #header_contents {
+  width: 75%;
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#header #header_contents button {
+  border: none;
+  background: none;
+}
+#header #header_contents .header_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#header #header_contents .header_menu div {
+  width: 28px;
+  height: 1px;
+  background: #1e1e1e;
+}
+#header #header_contents .header_menu div:nth-child(2) {
+  margin: 8px 0;
+}
+#header #header_contents .header_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header #header_contents .header_right img {
+  width: 28px;
+  height: 28px;
+  margin: 0 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#header #header_contents .header_right .header_menu_mobile {
+  margin-left: 10px;
+  display: none;
+}
+#header #header_contents .header_logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#header #header_contents .header_logo img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  #header #header_popup {
+    height: 20px;
+    font-size: 20px;
+    padding: 20px;
+  }
+  #header #header_contents {
+    width: 100%;
+    min-width: 390px;
+    height: 70px;
+    border: 1px solid red;
+    padding: 20px;
+  }
+  #header #header_contents .header_menu {
+    display: none;
+  }
+  #header #header_contents .header_logo {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    width: 64px;
+    height: 64px;
+  }
+  #header #header_contents .header_logo img {
+    width: 100%;
+    height: 100%;
+  }
+  #header #header_contents .header_right img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  #header #header_contents .header_right .header_menu_mobile {
+    display: block;
+    margin-left: 15px;
+  }
+  #header #header_contents .header_right .header_menu_mobile div {
+    height: 2px;
+  }
+}
+
+#gnb {
+  width: 100%;
+  background: #f7f7ef;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#gnb ul {
+  justify-content: space-between;
+}
+#gnb .gnb_container {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #e0ded9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+#gnb .gnb_container li {
+  font: normal 28px/1 "Playfair Display";
+}
+#gnb .gnb_container li:hover {
+  text-decoration: underline;
+}
+#gnb .gnb_container li:focus {
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  #gnb ul {
+    justify-content: space-between;
+  }
+  #gnb .gnb_container {
+    gap: 50px;
+    height: 80px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  #gnb .gnb_container:nth-child(2) {
+    height: auto;
+    padding: 20px 40px;
+    text-wrap: wrap;
+  }
+}
+
+#menu {
+  width: 100%;
+}
+
+#asdie {
+  width: 100%;
+}
+
+#footer {
+  width: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+}
+.wrap #container {
+  width: 580px;
+  height: auto;
+  margin: 100px auto;
+  padding: 80px 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e0ded9;
+}
+.wrap #container .logindata {
+  width: 580px;
+  margin: 0 auto 3px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap #container .logindata .login_idpw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.wrap #container .logindata .login_idpw input {
+  overflow: hidden;
+  width: 263px;
+  height: 32px;
+  margin-bottom: 2px;
+  padding-left: 10px;
+  border: 1px solid #e0ded9;
+  color: #a0a0a0;
+  font: normal 12px/1 "Futura PT";
+}
+.wrap #container .logindata .login_button {
+  width: 100px;
+  height: 68px;
+  background: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+  font: normal 12px/1 "Futura PT";
+  margin-left: 5px;
+}
+.wrap #container .login_second {
+  width: 360px;
+  font-size: 13px;
+}
+.wrap #container .login_second span {
+  margin-left: 10px;
+}
+.wrap #container .login_anchor {
+  width: 440px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 20px;
+  font-size: 13px;
+  color: #a0a0a0;
+}
+.wrap #container .login_anchor a:hover {
+  color: #1e1e1e;
+}
+.wrap #container .loginsnsbutton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 370px;
+}
+.wrap #container .loginsnsbutton div {
+  width: 176px;
+  height: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  border-radius: 3px;
+}
+.wrap #container .loginsnsbutton div img {
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid #fafaf6;
+}
+.wrap #container .loginsnsbutton div span {
+  width: 75%;
+  text-align: center;
+}
+.wrap #container .loginsnsbutton .naver {
+  background: #26C826;
+  color: #fff;
+}
+.wrap #container .loginsnsbutton .kakao {
+  background: #FFEB00;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 100%;
+    min-width: 390px;
+  }
+  .wrap #container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Login.css.map */

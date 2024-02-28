@@ -1,0 +1,122 @@
+@import "../../common.scss";
+
+//==========PC==========//
+.wrap {
+  width: 100%;
+  height: auto;
+  #container {
+    width: 580px;
+    height: auto; //나중에 수정
+    margin: 100px auto;
+    padding: 80px 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $Color-stroke;
+    .logindata {
+      width: 580px;
+      margin: 0 auto 3px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .login_idpw {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        input {
+          overflow: hidden;
+          width: 263px;
+          height: 32px;
+          margin-bottom: 2px;
+          padding-left: 10px;
+          border: 1px solid $Color-stroke;
+          color: $Textcolor-gray;
+          font: normal 12px/1 "Futura PT";
+        }
+      }
+      .login_button {
+        width: 100px;
+        height: 68px;
+        background: $Textcolor-black;
+        border: 1px solid $Textcolor-black;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 3px;
+        font: normal 12px/1 "Futura PT";
+        margin-left: 5px;
+      }
+    }
+    .login_second {
+      width: 360px;
+      font-size: 13px;
+      color: $text;
+      span {
+        margin-left: 10px;
+      }
+    }
+    .login_anchor {
+      width: 440px;
+      display: flex;
+      justify-content: space-around;
+      margin: 10px 0 20px;
+      font-size: 13px;
+      color: $Textcolor-gray;
+      a:hover {
+        color: $Textcolor-black;
+      }
+    }
+    .loginsnsbutton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 370px;
+      div {
+        width: 176px;
+        height: 31px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        border-radius: 3px;
+        img {
+          width: 25%;
+          text-align: center;
+          border-right: 1px solid $backgroundcolor-light;
+        }
+        span {
+          width: 75%;
+          text-align: center;
+        }
+      }
+      .naver {
+        background: #26C826;
+        color: #fff;
+      }
+      .kakao {
+        background: #FFEB00;
+      }
+    }
+  }
+}
+
+//==========Tablet==========//
+// @media screen and (max-width: 1200px) {
+//   .wrap {
+//     width: 100%;
+//     #container {
+//     }
+//   }
+// }
+
+//==========Mobile==========//
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 100%;
+    min-width: 390px;
+    #container {
+      width: 100%;
+    }
+  }
+}
