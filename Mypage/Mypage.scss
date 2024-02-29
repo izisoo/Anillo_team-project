@@ -3,6 +3,109 @@
 //==========PC==========//
 body {
   width: 100%;
+  #container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 35px;
+    padding: 100px 0;
+    margin: 0 auto;
+    .mypage_firstbox {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        width: 600px;
+        border: 1px solid $Color_stroke;
+        padding: 35px;
+        li {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px;
+          font-size: 13px;
+        }
+        #mypage_opacity {
+          opacity: 0;
+        }
+      }
+    }
+    .mypage_secondbox {
+      width: 100%;
+      border: 1px solid $Color-stroke;
+      ul:first-child {
+        padding: 10px 30px;
+        border-bottom: 1px solid $Color-stroke;
+        background: $backgroundcolor-lightgreen;
+        li {
+          span {
+            font-size: 12px;
+            color: $Textcolor-gray;
+          }
+        }
+      }
+      ul:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          width: 20%;
+          margin: 20px 0 30px;
+          text-align: center;
+          border-right: 2px dotted $Color_stroke;
+          &:last-child {
+            display: flex;
+            flex-direction: column;
+            border-right: none;
+            span {
+              line-height: 1.5rem;
+            }
+          }
+          }
+        }
+    }
+    .mypage_lastbox {
+      border: 1px solid $Color-stroke;
+      width: 100%;
+      div {
+        padding: 32px;
+        border-bottom: 1px solid $Color-stroke;
+        a {
+          span {
+            display: flex;
+            align-items: center;
+            h4 {
+              margin-left: 10px;
+            }
+            &:first-child {
+              font-family: "Futura PT";
+              font-size: 14px;
+            }
+            &:last-child {
+              color: $Textcolor-gray;
+              margin-top: 5px;
+              font-size: 14px;
+              height: 30px;
+            }
+          }
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+    button {
+      width: 185px;
+      height: 40px;
+      background: $Textcolor-black;
+      color: #fff;
+      font: normal 15px/1 "Futura PT";
+      letter-spacing: 2px;
+    }
+  }
 }
 
 //==========Tablet==========//
