@@ -6,8 +6,149 @@
   margin: 0 auto;
   border: 1px solid red;
   #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    margin: 90px auto 100px;
     width: 75%;
     border: 1px solid red;
+    position: relative;
+    #stocklist {
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .stockcont {
+        width: 100%;
+        text-align: center;
+        img {
+          width: 100%;
+        }
+        h3 {
+          margin: 20px auto 9px;
+          font: 500 18px/1.8 "Futura PT";
+        }
+        p {
+          font: normal 14px/1 "Futura PT";
+          color: #a0a0a0;
+        }
+      }
+      .stockcont:nth-child(3) {
+        h3 {
+          font: 500 18px/1.8 "Noto Sans KR";
+        }
+      }
+    }
+    #stocklist:last-child {
+      width: 100%;
+      justify-content: start;
+      .stockcont {
+        width: 25%;
+      }
+    }
+  }
+
+  #footer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    #footer_slide {
+      position: absolute;
+      .footer_slide_img {
+        display: flex;
+        height: 200px;
+        animation: footerslide 120s linear infinite;
+      }
+      @keyframes footerslide {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+    }
+    #footer_cont {
+      text-align: center;
+      margin-top: 200px;
+      #footer_left {
+        float: left;
+        width: 50%;
+        overflow: hidden;
+        padding: 150px 0 150px;
+        border-right: 1px solid #e0ded9;
+        h2 {
+          font: normal 1.125rem/1 "Futura PT";
+        }
+        .footer_left_cont {
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font: normal 0.825rem/1.3 "Futura PT";
+            &:first-child {
+              margin-top: 24px;
+            }
+            &:last-child {
+              margin-top: 38px;
+              font: normal 11px/1 "Futura PT";
+            }
+          }
+        }
+      }
+      #footer_right {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        width: 50%;
+        .footer_right_cont {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 33.3%;
+          padding: 150px 0 150px;
+          h2 {
+            font: normal 18px/1 "Futura PT";
+            margin-bottom: 18px;
+          }
+          span {
+            font: normal 14px/1.3 "Futura PT";
+          }
+          .footer_right_cont_icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-top: 34px;
+            i,
+            img {
+              width: 28px;
+              height: 28px;
+              line-height: 1.6rem;
+            }
+            i {
+              scale: 2;
+            }
+          }
+        }
+        .footer_right_cont:nth-child(2) {
+          padding-left: 20px;
+          span {
+            font: normal 14px/1.3 "Noto Sans KR";
+          }
+        }
+        .footer_right_cont:nth-child(3) {
+          p {
+            font: normal 14px/1.3 "Futura PT";
+            &:last-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -17,6 +158,56 @@
     #container {
       width: 100%;
     }
+    #footer {
+      #footer_cont {
+        #footer_left {
+          padding: 100px 0 100px;
+          h2 {
+            font: normal 16px/1 "Futura PT";
+          }
+          .footer_left_cont {
+            span {
+              font: normal 10px/1.3 "Futura PT";
+              &:first-child {
+              }
+              &:last-child {
+                font: normal 8px/1 "Futura PT";
+              }
+            }
+          }
+        }
+        #footer_right {
+          .footer_right_cont {
+            padding: 100px 0 100px;
+            h2 {
+              font: normal 16px/1 "Futura PT";
+            }
+            span {
+              font: normal 10px/1.3 "Futura PT";
+            }
+            .footer_right_cont_icon {
+              i,
+              img {
+                line-height: 1.7rem;
+              }
+              i {
+                scale: 2;
+              }
+            }
+          }
+          .footer_right_cont:nth-child(2) {
+            span {
+              font: normal 10px/1.3 "Noto Sans KR";
+            }
+          }
+          .footer_right_cont:nth-child(3) {
+            p {
+              font: normal 10px/1.3 "Futura PT";
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -25,6 +216,109 @@
   .wrap {
     min-width: 390px;
     #container {
+      gap: 0;
+      #stocklist {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .stockcont {
+          width: 100%;
+          text-align: center;
+          padding-bottom: 50px;
+          img {
+            width: 100%;
+          }
+          h3 {
+            margin: 20px auto 9px;
+            font: 500 18px/1.8 "Futura PT";
+          }
+          p {
+            font: normal 14px/1 "Futura PT";
+            color: #a0a0a0;
+          }
+        }
+        .stockcont:nth-child(3) {
+          h3 {
+            font: 500 18px/1.8 "Noto Sans KR";
+          }
+        }
+      }
+
+      #stocklist:last-child {
+        width: 100%;
+        justify-content: start;
+        .stockcont {
+          width: 100%;
+        }
+      }
+    }
+
+    #footer {
+      #footer_cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        #footer_left {
+          width: 100%;
+          overflow: hidden;
+          padding: 50px 0 50px;
+          border-bottom: 1px solid #e0ded9;
+          h2 {
+            font: normal 1.125rem/1 "Futura PT";
+          }
+          .footer_left_cont {
+            span {
+              font: normal 0.825rem/1.3 "Futura PT";
+              &:last-child {
+                display: none;
+              }
+            }
+          }
+        }
+        #footer_right {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .footer_right_cont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 50px 0 50px;
+            border-bottom: 1px solid #e0ded9;
+            h2 {
+              font: normal 18px/1 "Futura PT";
+            }
+            span {
+              font: normal 14px/1.3 "Futura PT";
+            }
+            .footer_right_cont_icon {
+              i,
+              img {
+                line-height: 1.6rem;
+              }
+            }
+          }
+          .footer_right_cont:nth-child(2) {
+            span {
+              font: normal 14px/1.3 "Noto Sans KR";
+            }
+          }
+          .footer_right_cont:nth-child(3) {
+            p {
+              font: normal 14px/1.3 "Futura PT";
+              &:last-child {
+                display: block;
+                margin-top: 76px;
+                font: normal 11px/1 "Futura PT";
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

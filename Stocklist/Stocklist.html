@@ -1,13 +1,584 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Stocklist.css">
-  <script defer src="./Stocklist.js"></script>
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/74454cb6c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Stocklist.css" />
+    <script defer src="./Stocklist.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="header"></div>
+      <div id="gnb">
+        <h1 class="gnb_container">Stocklist</h1>
+        <ul class="gnb_container">
+          <li><a href="#">Online</a></li>
+          <li><a href="#">Off-line</a></li>
+        </ul>
+      </div>
+      <!-- <div id="container">
+        <ul class="product_list">
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (1).png"
+                alt="thumbnail01"
+              />
+              <img
+                class="shop_product_thumbnail_hover"
+                src="./0.image/shop_productspage_thumbnail (1).webp"
+                alt="thumbnail01"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Shower Time<br />Scented<br />Hand & Body Wash</h3>
+              <h4 class="product_name">샤워타임 센티드 핸드 & 바디워시</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price"></h4>
+                <h4 class="product_price">28,000원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (2).png"
+                alt="thumbnail02"
+              />
+              <img
+                class="shop_product_thumbnail_hover"
+                src="./0.image/shop_productspage_thumbnail (2).webp"
+                alt="thumbnail02"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Shower Time<br />Perfum<br />Mist</h3>
+              <h4 class="product_name">샤워타임 퍼퓸 미스트</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price"></h4>
+                <h4 class="product_price">35,000원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (3).png"
+                alt="thumbnail03"
+              />
+              <img
+                class="shop_product_thumbnail_hover"
+                src="./0.image/shop_productspage_thumbnail (3).webp"
+                alt="thumbnail03"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Shower Time<br />Scent Balm</h3>
+              <h4 class="product_name">샤워타임 센트밤</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price"></h4>
+                <h4 class="product_price">20,000원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (4).png"
+                alt="thumbnail04"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Black Tea<br />Nourishing<br />Duo Set</h3>
+              <h4 class="product_name">블랙티 너리싱 2종</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price">60,000원</h4>
+                <h4 class="product_price">48,000원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (5).png"
+                alt="thumbnail05"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Black Tea<br />Nourishing<br />Trio Set</h3>
+              <h4 class="product_name">블랙티 너리싱 3종</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price">60,000원</h4>
+                <h4 class="product_price">62,700원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (6).png"
+                alt="thumbnail06"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Rosy Night<br />Repair<br />Duo Set</h3>
+              <h4 class="product_name">로지나잇 리페어 2종</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price">50,000원</h4>
+                <h4 class="product_price">46,400원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (7).png"
+                alt="thumbnail07"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Shower Time<br />Parfum Mist &<br />Half Zip up Sweater</h3>
+              <h4 class="product_name">
+                샤워타임 퍼퓸 미스트 & 하프 집업 스웨터 세트
+              </h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price">174,000원</h4>
+                <h4 class="product_price">130,500원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (8).png"
+                alt="thumbnail08"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Shower Time<br />Parfum Mist &<br />Sweat Shirt</h3>
+              <h4 class="product_name">
+                샤워타임 퍼퓸 미스트 & 스웻 셔츠 세트
+              </h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price">104,000원</h4>
+                <h4 class="product_price">78,000원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (9).png"
+                alt="thumbnail09"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Shower Time<br />Parfum Mist &<br />Terry Tee</h3>
+              <h4 class="product_name">샤워타임 퍼퓸 미스트 & 테리 티 세트</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price">100,000원</h4>
+                <h4 class="product_price">75,000원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (10).png"
+                alt="thumbnail10"
+              />
+              <img
+                class="shop_product_thumbnail_hover"
+                src="./0.image/shop_productspage_thumbnail (10).webp"
+                alt="thumbnail10"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Black Tea<br />Nourishing<br />Scalp Shampoo</h3>
+              <h4 class="product_name">블랙티 너리싱 두피 샴푸</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price"></h4>
+                <h4 class="product_price">32,000원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (11).png"
+                alt="thumbnail11"
+              />
+              <img
+                class="shop_product_thumbnail_hover"
+                src="./0.image/shop_productspage_thumbnail (11).webp"
+                alt="thumbnail11"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Black Tea<br />Nourishing<br />Scalp Treatment</h3>
+              <h4 class="product_name">블랙티 너리싱 두피 트리트먼트</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price"></h4>
+                <h4 class="product_price">28,000원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (12).png"
+                alt="thumbnail12"
+              />
+              <img
+                class="shop_product_thumbnail_hover"
+                src="./0.image/shop_productspage_thumbnail (12).webp"
+                alt="thumbnail12"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Black Tea<br />Nourishing<br />Scalp Roll on</h3>
+              <h4 class="product_name">블랙티 너리싱 두피 롤온</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price"></h4>
+                <h4 class="product_price">24,000원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (13).png"
+                alt="thumbnail13"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Anillo x Monday Edition<br />Rosy, my heart<br />Set</h3>
+              <h4 class="product_name">샤워타임 퍼퓸 미스트 & 테리 티 세트</h4>
+              <div class="shop_product_price">
+                <h4 class="product_original_price">100,000원</h4>
+                <h4 class="product_price">75,000원</h4>
+              </div>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (14).png"
+                alt="thumbnail14"
+              />
+              <img
+                class="shop_product_thumbnail_hover"
+                src="./0.image/shop_productspage_thumbnail (14).webp"
+                alt="thumbnail14"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Shower Time<br />Scented<br />Hand & Body Wash</h3>
+              <h4>샤워타임 센티드 핸드&바디워시</h4>
+              <h4>28,000원</h4>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="product">
+            <div class="productimg">
+              <img
+                class="shop_product_thumbnail"
+                src="./0.image/shop_productspage_thumbnail (15).png"
+                alt="thumbnail15"
+              />
+              <img
+                class="shop_product_thumbnail_hover"
+                src="./0.image/shop_productspage_thumbnail (15).webp"
+                alt="thumbnail15"
+              />
+            </div>
+            <div class="product_info">
+              <h3>Shower Time<br />Scented<br />Hand & Body Wash</h3>
+              <h4>샤워타임 센티드 핸드&바디워시</h4>
+              <h4>28,000원</h4>
+              <button class="button_pc_nobg">ADD TO CART</button>
+            </div>
+          </li>
+        </ul>
+      </div> -->
+      <div id="container">
+        <div id="stocklist_online">
+          <section id="stocklist">
+            <article class="stockcont">
+              <img src="./0.image/stock_wconcept.jpg" alt="wconcept" />
+              <div class="stock_desc">
+                <h3>
+                  <a
+                    href="https://display.wconcept.co.kr/brand/110124"
+                    target="_blank"
+                    >W CONCEPT</a
+                  >
+                </h3>
+                <p>
+                  <a href="#">www.wconcept.co.kr</a>
+                </p>
+                <p>
+                  <a href="#"> 1566-5027 </a>
+                </p>
+              </div>
+            </article>
+            <article class="stockcont">
+              <img src="./0.image/stock_eql.jpg" alt="eql" />
+              <div class="stock_desc">
+                <h3>
+                  <a
+                    href="https://www.eqlstore.com/brands/main?brndCategoryNumber=BDMA01M13"
+                    >EQL</a
+                  >
+                </h3>
+                <p>
+                  <a href="#">www.eqlstore.com</a>
+                </p>
+                <p>
+                  <a href="#"> 1661-8858 </a>
+                </p>
+              </div>
+            </article>
+            <article class="stockcont">
+              <img src="./0.image/stock_kakaogift.jpg" alt="kakao" />
+              <div class="stock_desc">
+                <h3>
+                  <a href="#">카카오톡 선물하기</a>
+                </h3>
+                <p>
+                  <a href="#">gift.kakao.com</a>
+                </p>
+                <p>
+                  <a href="#"> 1544-2431 </a>
+                </p>
+              </div>
+            </article>
+            <article class="stockcont">
+              <img src="./0.image/stock_29cm.jpg" alt="29cm" />
+              <div class="stock_desc">
+                <h3>
+                  <a href="#">29CM</a>
+                </h3>
+                <p>
+                  <a href="#">www.29cm.co.kr</a>
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section id="stocklist">
+            <article class="stockcont">
+              <img src="./0.image/stock_musinsa.jpg" alt="musinsa" />
+              <div class="stock_desc">
+                <h3>
+                  <a href="#">MUSINSA</a>
+                </h3>
+                <p>
+                  <a href="#">www.musinsa.com</a>
+                </p>
+                <p>
+                  <a href="#"> 1544-7199 </a>
+                </p>
+              </div>
+            </article>
+            <article class="stockcont">
+              <img src="./0.image/stock_33hoodie.jpg" alt="33hoodie" />
+              <div class="stock_desc">
+                <h3>
+                  <a href="#">33HOODIE</a>
+                </h3>
+                <p>
+                  <a href="#">www.33hoodie.com</a>
+                </p>
+                <p>
+                  <a href="#"> 070-8807-3300 </a>
+                </p>
+              </div>
+            </article>
+            <article class="stockcont">
+              <img
+                src="./0.image/stock_eternaljourney.jpg"
+                alt="eternaljourney"
+              />
+              <div class="stock_desc">
+                <h3>
+                  <a href="#">ETERNAL JOURNEY</a>
+                </h3>
+                <p>
+                  <a href="#">www.eternaljourney.ananti.kr</a>
+                </p>
+              </div>
+            </article>
+            <article class="stockcont">
+              <img src="./0.image/stock_chicor.jpg" alt="chicor" />
+              <div class="stock_desc">
+                <h3>
+                  <a href="#">CHICOR</a>
+                </h3>
+                <p>
+                  <a href="#">www.chicor.com</a>
+                </p>
+                <p>
+                  <a href="#">1600-5932</a>
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section id="stocklist">
+            <article class="stockcont">
+              <img src="./0.image/stock_makefolio.jpg" alt="makefolio" />
+              <div class="stock_desc">
+                <h3>
+                  <a href="#">MAKE FOLIO</a>
+                </h3>
+                <p>
+                  <a href="#">www.makefolio.co.kr</a>
+                </p>
+                <p>
+                  <a href="#"> 070-5158-9013 </a>
+                </p>
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <div id="stocklist_offline"></div>
+      </div>
+      <div id="footer">
+        <section id="footer_slide">
+          <div class="footer_slide_img">
+            <img src="./0.image/marquee-text.jpg" alt="" />
+            <img src="./0.image/marquee-text.jpg" alt="" />
+            <img src="./0.image/marquee-text.jpg" alt="" />
+            <img src="./0.image/marquee-text.jpg" alt="" />
+            <img src="./0.image/marquee-text.jpg" alt="" />
+            <img src="./0.image/marquee-text.jpg" alt="" />
+            <img src="./0.image/marquee-text.jpg" alt="" />
+          </div>
+        </section>
+        <div id="footer_cont">
+          <section id="footer_left">
+            <h2><strong>COMPANY</strong></h2>
+            <div class="footer_left_cont">
+              <span>
+                <p><strong>COMPANY&nbsp;</strong></p>
+                <p>Mediquitous&nbsp;&nbsp;</p>
+                <p><strong>CEO&nbsp;</strong></p>
+                <p>DooJin Lee</p>
+              </span>
+              <span>
+                <p><strong>ECOMMERCE PERMIT REGISTRATION NO&nbsp;</strong></p>
+                <p>2017-Seoul Gangnam-02608</p>
+              </span>
+              <span>
+                <p><strong>PERMIT NUMBER&nbsp;</strong></p>
+                <p>301-87-00296 Mediquitous Co., Ltd.</p>
+                <p></p>
+                <p><a href="#">[OPERATOR INFORMATION]</a></p>
+              </span>
+              <span>
+                <p><strong>ADDRESS&nbsp;</strong></p>
+                <p>
+                  06106 Gangnam-Gu, Seoul, Republic of Korea 2nd F, 644,
+                  Nonhyeon-Ro
+                </p>
+              </span>
+              <span>
+                <p><strong>EMAIL(MARKETING INQUIRY)&nbsp;</strong></p>
+                <p>marketing@anillo.co.kr</p>
+              </span>
+              <span>
+                <p><strong>EMAIL(PARTERSHIP INQUIRY)&nbsp;</strong></p>
+                <p>sales@anillo.co.kr</p>
+              </span>
+              <span>
+                <p><strong>EMAIL(GLOBAL INQUIRY)&nbsp;</strong></p>
+                <p>global@anillo.co.kr</p>
+              </span>
+              <span>
+                <p>copyright © ANILLO. All rights reserved.</p>
+              </span>
+            </div>
+          </section>
+          <section id="footer_right">
+            <div class="footer_right_cont">
+              <h2><strong>CS CENTER</strong></h2>
+              <span><strong>TEL&nbsp;</strong>1566-5103</span>
+              <span><strong>OPEN&nbsp;</strong>10:00am ~ 5:00pm</span>
+              <span><strong>LUNCH TIME&nbsp;</strong>12:00pm ~ 1:00pm</span>
+              <span><strong>SAT, SUN, HOLIDAY OFF</strong></span>
+              <div class="footer_right_cont_icon">
+                <span><i class="fab fa-instagram"></i></span>
+                <span><img src="./0.image/카카오톡.png" alt="kakao" /></span>
+              </div>
+            </div>
+            <div class="footer_right_cont">
+              <h2><strong>DELIVERY INFO</strong></h2>
+              <span><strong>배송조회&nbsp;</strong>CJ대한통운</span>
+              <span>
+                <strong>반송주소&nbsp;</strong>
+                HQ/CENTER<br />경기도 이천시 백사면 청백리로393번길<br />519-13
+                2층 볼드나인센터<br />메디쿼터스 물류센터</span
+              >
+            </div>
+            <div class="footer_right_cont">
+              <h2><strong>HELP</strong></h2>
+              <p>
+                <a href="#"><strong>ABOUT US</strong></a>
+              </p>
+              <p>
+                <a href=""><strong>AGREEMENT</strong></a>
+              </p>
+              <p>
+                <a href=""><strong>PRIVACY POLICY</strong></a>
+              </p>
+              <p>
+                <a href=""><strong>SHOP GUIDE</strong></a>
+              </p>
+              <p>
+                <a href=""><strong>MEMBERSHIP</strong></a>
+              </p>
+              <p>copyright © ANILLO. All rights reserved.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="aside"></div>
+      <div id="menu"></div>
+    </div>
+  </body>
 </html>
