@@ -189,6 +189,57 @@ body {
   #header #header_contents .header_right .header_menu_mobile div {
     height: 2px;
   }
+<<<<<<< HEAD
+}
+
+#gnb {
+  width: 100%;
+  background: #f7f7ef;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#gnb ul {
+  justify-content: space-between;
+}
+#gnb .gnb_container {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #e0ded9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+#gnb .gnb_container li {
+  font: normal 28px/1 "Playfair Display";
+}
+#gnb .gnb_container li:hover {
+  text-decoration: underline;
+}
+#gnb .gnb_container li:focus {
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  #gnb ul {
+    justify-content: space-between;
+  }
+  #gnb .gnb_container {
+    gap: 50px;
+    height: 80px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  #gnb .gnb_container:nth-child(2) {
+    height: auto;
+    padding: 20px 40px;
+    text-wrap: wrap;
+  }
+=======
+>>>>>>> master
 }
 
 #gnb {
@@ -239,47 +290,6 @@ body {
   }
 }
 
-#gnb {
-  width: 100%;
-  background: #f7f7ef;
-  text-align: center;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#gnb .gnb_container {
-  width: 100%;
-  height: 60px;
-  border-bottom: 1px solid #e0ded9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-}
-#gnb .gnb_container li {
-  font: normal 28px/1 "Playfair Display";
-}
-#gnb .gnb_container li:hover {
-  text-decoration: underline;
-}
-#gnb .gnb_container li:focus {
-  text-decoration: underline;
-}
-@media screen and (max-width: 768px) {
-  #gnb .gnb_container {
-    gap: 13px;
-    height: 80px;
-  }
-  #gnb .gnb_container:nth-child(2) {
-    padding: 20px 40px;
-    height: 150px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 #menu {
   width: 100%;
 }
@@ -292,15 +302,18 @@ body {
   width: 100%;
 }
 
-body {
+.wrap {
   width: 100%;
+}
+.wrap #container {
+  width: 75%;
 }
 
 @media screen and (max-width: 1200px) {
   .wrap {
     width: 100%;
   }
-  .wrap .container {
+  .wrap #container {
     width: 100%;
   }
 }
@@ -309,7 +322,7 @@ body {
     width: 100%;
     min-width: 390px;
   }
-  .wrap .container {
+  .wrap #container {
     width: 100%;
   }
 }/*# sourceMappingURL=Mypage.css.map */

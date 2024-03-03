@@ -23,8 +23,16 @@
 //==========Mobile==========//
 @media screen and (max-width: 768px) {
   .wrap {
-    min-width: 390px;
     #container {
+    }
+    #gnb {
+      .gnb_container {
+        padding: 0 50px;
+        &:nth-child(2) {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
     }
   }
 }
