@@ -19,7 +19,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 80px;
         .productimg {
           width: 100%;
           height: 400px;
@@ -67,10 +67,6 @@
         .button_pc_nobg {
           width: 185px;
           height: 45px;
-          // position: absolute;
-          // bottom: 0;
-          // left: 0;
-          // transform: translate(-50% -50%);
           border: 1px solid $Textcolor-black;
           font: normal 14px/1 "Futura PT";
           background: none;
