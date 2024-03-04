@@ -3,6 +3,135 @@
 //==========PC==========//
 body {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    .order_firstbox {
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      background: $backgroundcolor-lightgreen;
+      border: 1px solid $Color-stroke;
+      border-bottom: 1.5px solid $Textcolor-black;
+      button {
+        width: 200px;
+        height: 100%;
+        &:nth-child(1) {
+          background: $Textcolor-black;
+          color: #fff;
+        }
+        &:nth-child(2) {
+          color: $Textcolor-gray;
+          border: none;
+          border-right: 1px solid $Color-stroke;
+          background: transparent;
+        }
+      }
+    }
+    .order_secondbox {
+      width: 100%;
+      margin: 35px 0;
+      .order_secondbox_top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        font-size: 13px;
+        border: 1px solid $Color-stroke;
+        select {
+          margin-right: 15px;
+          padding: 5px;
+        }
+        .order_bar {
+          background: $Color-stroke;
+          height: 25px;
+          width: 1px;
+          margin-right: 15px;
+        }
+        .order_monthbutton {
+          border: 1px solid $Color-stroke;
+          border-radius: 5px;
+          color: $Textcolor-gray;
+          background: $Color-lightgray;
+          margin-right: 15px;
+          display: flex;
+          button {
+            width: auto;
+            height: 25px;
+            padding: 0 10px;
+            border: none;
+            border-right: 1px solid $Color-stroke;
+            font-size: 11px;
+            margin-right: -0px;
+            &:last-child {
+              border: none;
+            }
+          }
+        }
+        .order_click {
+          height: 25px;
+          padding: 0px 10px;
+          border: none;
+          border-radius: 5px;
+          background: $Textcolor-black;
+          color: #fff;
+        }
+      }
+      .order_secondbox_bottom {
+        margin-top: 35px;
+        padding: 5px 0px;
+        span {
+          display: block;
+          font-size: 13px;
+          line-height: 1.3rem;
+          color: $Textcolor-gray;
+        }
+      }
+    }
+    .order_lastbox {
+      width: 100%;
+      h4 {
+        font-style: bold;
+        margin-bottom: 10px;
+      }
+      ul {
+        width: 1200px;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 4.3fr 0.7fr 1fr 1fr 1fr;
+        border: 1px solid var(--Color-tableline, #e0ded9);
+        background: $backgroundcolor-lightgreen;
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          height: 60px;
+          border-right: 1px solid $Color-stroke;
+          font-size: 14px;
+          &:last-child {
+            border-right: none;
+          }
+        }
+        &:last-child {
+          border: none;
+          background: transparent;
+          li {
+            width:1200px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 //==========Tablet==========//
@@ -14,7 +143,6 @@ body {
     }
   }
 }
-
 
 //==========Mobile==========//
 @media screen and (max-width: 768px) {
