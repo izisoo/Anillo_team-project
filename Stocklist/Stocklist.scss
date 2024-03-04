@@ -15,38 +15,90 @@
     width: 75%;
     border: 1px solid red;
     position: relative;
-    #stocklist {
-      width: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .stockcont {
-        width: 100%;
-        text-align: center;
-        img {
+    #stocklist_online,
+    #stocklist_offline {
+      #stocklist {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        .stockcont {
           width: 100%;
+          text-align: center;
+          margin-bottom: 65px;
+          img {
+            width: 100%;
+          }
+          h3 {
+            margin: 20px auto 9px;
+            font: 500 18px/1.8 "Futura PT";
+          }
+          p {
+            font: normal 14px/1 "Futura PT";
+            color: #a0a0a0;
+          }
         }
-        h3 {
-          margin: 20px auto 9px;
-          font: 500 18px/1.8 "Futura PT";
-        }
-        p {
-          font: normal 14px/1 "Futura PT";
-          color: #a0a0a0;
+        .stockcont:nth-child(3) {
+          h3 {
+            font: 500 18px/1.8 "Noto Sans KR";
+          }
         }
       }
-      .stockcont:nth-child(3) {
-        h3 {
-          font: 500 18px/1.8 "Noto Sans KR";
+      #stocklist:last-child {
+        width: 100%;
+        justify-content: start;
+        .stockcont {
+          width: 25%;
         }
       }
     }
-    #stocklist:last-child {
-      width: 100%;
-      justify-content: start;
+    #stocklist_offline {
+      display: none;
       .stockcont {
-        width: 25%;
+        p {
+          margin-bottom: 9px;
+        }
+        span {
+          display: flex;
+          flex-direction: column;
+          gap: 9px;
+          font: normal 14px/1.4 "Futura PT";
+          text-decoration: underline;
+          cursor: pointer;
+          margin-bottom: 9px;
+        }
+        .stockcont_ananti_inner,
+        .stockcont_chicor_inner {
+          margin: 15px;
+          height: 0;
+          overflow: hidden;
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(-20px);
+          transition: all 0.5s;
+          .stockcont_inner {
+            margin-top: 15px;
+            &:nth-child(1) {
+              margin-top: 0px;
+            }
+            h4 {
+              font: 14px/1.4 "Noto Sans KR";
+            }
+            p {
+              font: 11px/1.1 "Noto Sans KR";
+              color: #a0a0a0;
+            }
+          }
+        }
+        .view {
+          height: auto;
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
+    }
+    .tab {
+      display: block;
     }
   }
 
@@ -216,41 +268,48 @@
   .wrap {
     min-width: 390px;
     #container {
-      gap: 0;
-      #stocklist {
-        width: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        .stockcont {
-          width: 100%;
-          text-align: center;
-          padding-bottom: 50px;
-          img {
+      gap: 0px;
+      #stocklist_online,
+      #stocklist_offline {
+        #stocklist {
+          width: auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          .stockcont {
             width: 100%;
+            text-align: center;
+            padding-bottom: 50px;
+            img {
+              width: 100%;
+            }
+            h3 {
+              margin: 20px auto 9px;
+              font: 500 18px/1.8 "Futura PT";
+            }
+            p {
+              font: normal 14px/1 "Futura PT";
+              color: #a0a0a0;
+            }
           }
-          h3 {
-            margin: 20px auto 9px;
-            font: 500 18px/1.8 "Futura PT";
-          }
-          p {
-            font: normal 14px/1 "Futura PT";
-            color: #a0a0a0;
+          .stockcont:nth-child(3) {
+            h3 {
+              font: 500 18px/1.8 "Noto Sans KR";
+            }
           }
         }
-        .stockcont:nth-child(3) {
-          h3 {
-            font: 500 18px/1.8 "Noto Sans KR";
+        #stocklist:last-child {
+          width: 100%;
+          justify-content: start;
+          .stockcont {
+            width: 100%;
           }
         }
       }
-
-      #stocklist:last-child {
-        width: 100%;
-        justify-content: start;
-        .stockcont {
-          width: 100%;
-        }
+      #stocklist_offline {
+        display: none;
+      }
+      .tab {
+        display: block;
       }
     }
 
