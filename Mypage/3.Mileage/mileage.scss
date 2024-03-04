@@ -3,6 +3,94 @@
 //==========PC==========//
 body {
   width: 100%;
+  .container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    margin: 0 auto;
+    .mileage_firstbox {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        width: 600px;
+        border: 1px solid $Color_stroke;
+        padding: 35px;
+        li {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px;
+          font-size: 13px;
+        }
+        .mileage_firstchild {
+          display: none;
+        }
+      }
+    }
+    .mileage_secondbox {
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      background: $backgroundcolor-lightgreen;
+      border: 1px solid $Color-stroke;
+      border-bottom: 1.5px solid $Textcolor-black;
+      margin: 35px 0 60px;
+      button {
+        width: 200px;
+        height: 100%;
+        color: $Textcolor-gray;
+        border: none;
+        border-right: 1px solid $Color-stroke;
+        background: transparent;
+        &:nth-child(1) {
+          background: $Textcolor-black;
+          color: #fff;
+        }
+        img {
+          display: none;
+        }
+      }
+    }
+    .mileage_lastbox {
+      width: 100%;
+      h4 {
+        font-style: bold;
+        margin-bottom: 10px;
+      }
+      ul {
+        width: 1200px;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 150px 150px 150px 1fr;
+        border: 1px solid var(--Color-tableline, #e0ded9);
+        background: $backgroundcolor-lightgreen;
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          height: 60px;
+          border-right: 1px solid $Color-stroke;
+          font-size: 14px;
+          &:last-child {
+            border-right: none;
+          }
+        }
+        &:last-child {
+          border: none;
+          background: transparent;
+          li {
+            width: 1200px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 //==========Tablet==========//
@@ -11,6 +99,7 @@ body {
     width: 100%;
     .container {
       width: 100%;
+      padding: 50px 0;
     }
   }
 }
@@ -22,6 +111,70 @@ body {
     min-width: 390px;
     .container {
       width: 100%;
+      padding: 50px 0;
+      .mileage_firstbox {
+        display: block;
+        ul {
+          width: 100%;
+          padding: 0;
+          border: none;
+          li {
+            font-size: 33px;
+            border-bottom: 1px solid $Color-stroke;
+            padding: 20px;
+            margin-bottom: 0;
+          }
+          img {
+            display: none;
+          }
+        }
+        &:last-child {
+          li:last-child {
+            display: none;
+          }
+        }
+        .mileage_firstchild {
+          display: block;
+          background: $Textcolor-black;
+          color: #fff;
+          font-size: 40px;
+        }
+      }
+      .mileage_secondbox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        button {
+          width: 100%;
+          height: 80px;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: $backgroundcolor-lightgreen;
+          border: 1px solid $Color-stroke;
+          border-bottom: none;
+          span {
+            font-size: 33px;
+            color: $Textcolor-darkgray;
+          }
+          img {
+            display: inline;
+          }
+          &:first-child {
+            background: inherit;
+            color: inherit;
+          }
+          &:last-child {
+            border-bottom: 1px solid $Color-stroke;
+          }
+        }
+      }
+      .mileage_lastbox {
+        display: none;
+      }
     }
   }
 }

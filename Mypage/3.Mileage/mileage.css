@@ -295,6 +295,94 @@ body {
 body {
   width: 100%;
 }
+body .container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+body .container .mileage_firstbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .mileage_firstbox ul {
+  width: 600px;
+  border: 1px solid #e0ded9;
+  padding: 35px;
+}
+body .container .mileage_firstbox ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+body .container .mileage_firstbox ul .mileage_firstchild {
+  display: none;
+}
+body .container .mileage_secondbox {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  background: #f7f7ef;
+  border: 1px solid #e0ded9;
+  border-bottom: 1.5px solid #1e1e1e;
+  margin: 35px 0 60px;
+}
+body .container .mileage_secondbox button {
+  width: 200px;
+  height: 100%;
+  color: #a0a0a0;
+  border: none;
+  border-right: 1px solid #e0ded9;
+  background: transparent;
+}
+body .container .mileage_secondbox button:nth-child(1) {
+  background: #1e1e1e;
+  color: #fff;
+}
+body .container .mileage_secondbox button img {
+  display: none;
+}
+body .container .mileage_lastbox {
+  width: 100%;
+}
+body .container .mileage_lastbox h4 {
+  font-style: bold;
+  margin-bottom: 10px;
+}
+body .container .mileage_lastbox ul {
+  width: 1200px;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 1fr;
+  border: 1px solid var(--Color-tableline, #e0ded9);
+  background: #f7f7ef;
+}
+body .container .mileage_lastbox ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 60px;
+  border-right: 1px solid #e0ded9;
+  font-size: 14px;
+}
+body .container .mileage_lastbox ul li:last-child {
+  border-right: none;
+}
+body .container .mileage_lastbox ul:last-child {
+  border: none;
+  background: transparent;
+}
+body .container .mileage_lastbox ul:last-child li {
+  width: 1200px;
+  border: none;
+}
 
 @media screen and (max-width: 1200px) {
   .wrap {
@@ -302,6 +390,7 @@ body {
   }
   .wrap .container {
     width: 100%;
+    padding: 50px 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -311,5 +400,67 @@ body {
   }
   .wrap .container {
     width: 100%;
+    padding: 50px 0;
+  }
+  .wrap .container .mileage_firstbox {
+    display: block;
+  }
+  .wrap .container .mileage_firstbox ul {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+  .wrap .container .mileage_firstbox ul li {
+    font-size: 33px;
+    border-bottom: 1px solid #e0ded9;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  .wrap .container .mileage_firstbox ul img {
+    display: none;
+  }
+  .wrap .container .mileage_firstbox:last-child li:last-child {
+    display: none;
+  }
+  .wrap .container .mileage_firstbox .mileage_firstchild {
+    display: block;
+    background: #1e1e1e;
+    color: #fff;
+    font-size: 40px;
+  }
+  .wrap .container .mileage_secondbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap .container .mileage_secondbox button {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7ef;
+    border: 1px solid #e0ded9;
+    border-bottom: none;
+  }
+  .wrap .container .mileage_secondbox button span {
+    font-size: 33px;
+    color: #1e1e1e;
+  }
+  .wrap .container .mileage_secondbox button img {
+    display: inline;
+  }
+  .wrap .container .mileage_secondbox button:first-child {
+    background: inherit;
+    color: inherit;
+  }
+  .wrap .container .mileage_secondbox button:last-child {
+    border-bottom: 1px solid #e0ded9;
+  }
+  .wrap .container .mileage_lastbox {
+    display: none;
   }
 }/*# sourceMappingURL=mileage.css.map */
