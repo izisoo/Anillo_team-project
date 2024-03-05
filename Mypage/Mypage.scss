@@ -129,6 +129,8 @@ body {
     min-width: 390px;
     #container {
       gap: 0;
+      word-break: keep-all;
+      padding: 15px 0;
       .mypage_firstbox {
         height: 80px;
         ul {
@@ -162,11 +164,12 @@ body {
       }
       .mypage_secondbox {
         ul:first-child {
-          height: 80px;
           display: flex;
           justify-content: center;
           align-items: center;
           li {
+            padding: 10px;
+            text-align: center;
             font-size: 33px;
             span {
               font-size: 30px;
@@ -192,8 +195,7 @@ body {
               height: 80px;
               flex-direction: row;
               background: $backgroundcolor-lightgreen;
-              border: 1px solid $Color-stroke;
-              border-bottom: none;
+              border-top: 1px solid $Color-stroke;
               margin: 0;
               span {
                 width: 33.33%;

@@ -247,6 +247,8 @@ body #container button {
   }
   body #container {
     gap: 0;
+    word-break: keep-all;
+    padding: 15px 0;
   }
   body #container .mypage_firstbox {
     height: 80px;
@@ -280,12 +282,13 @@ body #container button {
     display: none;
   }
   body #container .mypage_secondbox ul:first-child {
-    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   body #container .mypage_secondbox ul:first-child li {
+    padding: 10px;
+    text-align: center;
     font-size: 33px;
   }
   body #container .mypage_secondbox ul:first-child li span {
@@ -312,8 +315,7 @@ body #container button {
     height: 80px;
     flex-direction: row;
     background: #f7f7ef;
-    border: 1px solid #e0ded9;
-    border-bottom: none;
+    border-top: 1px solid #e0ded9;
     margin: 0;
   }
   body #container .mypage_secondbox ul:last-child li:last-child span {
