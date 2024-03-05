@@ -209,11 +209,12 @@ body #container .mypage_lastbox div a span h4 {
 body #container .mypage_lastbox div a span:first-child {
   font-family: "Futura PT";
   font-size: 14px;
+  margin-bottom: 5px;
 }
 body #container .mypage_lastbox div a span:last-child {
   color: #a0a0a0;
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 13px;
   height: 30px;
 }
 body #container .mypage_lastbox div a img {
@@ -312,6 +313,7 @@ body #container button {
     flex-direction: row;
     background: #f7f7ef;
     border: 1px solid #e0ded9;
+    border-bottom: none;
     margin: 0;
   }
   body #container .mypage_secondbox ul:last-child li:last-child span {

@@ -83,11 +83,12 @@ body {
             &:first-child {
               font-family: "Futura PT";
               font-size: 14px;
+              margin-bottom: 5px;
             }
             &:last-child {
               color: $Textcolor-gray;
               margin-top: 5px;
-              font-size: 14px;
+              font-size: 13px;
               height: 30px;
             }
           }
@@ -186,14 +187,13 @@ body {
             &:nth-child(2),&:nth-child(4) {
               border: none;
             }
-            span {
-            }
             &:last-child {
               width: 100%;
               height: 80px;
               flex-direction: row;
               background: $backgroundcolor-lightgreen;
               border: 1px solid $Color-stroke;
+              border-bottom: none;
               margin: 0;
               span {
                 width: 33.33%;
