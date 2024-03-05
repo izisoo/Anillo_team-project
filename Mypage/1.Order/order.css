@@ -277,6 +277,7 @@ body .container .order_firstbox {
 body .container .order_firstbox button {
   width: 200px;
   height: 100%;
+  border: none;
 }
 body .container .order_firstbox button:nth-child(1) {
   background: #1e1e1e;
@@ -284,7 +285,6 @@ body .container .order_firstbox button:nth-child(1) {
 }
 body .container .order_firstbox button:nth-child(2) {
   color: #a0a0a0;
-  border: none;
   border-right: 1px solid #e0ded9;
   background: transparent;
 }
@@ -375,13 +375,12 @@ body .container .order_lastbox ul li {
 body .container .order_lastbox ul li:last-child {
   border-right: none;
 }
-body .container .order_lastbox ul:last-child {
-  border: none;
-  background: transparent;
-}
-body .container .order_lastbox ul:last-child li {
+body .container .order_lastbox .order_lastli {
   width: 1200px;
   border: none;
+  text-align: center;
+  font-size: 13px;
+  padding: 50px;
 }
 
 @media screen and (max-width: 1200px) {

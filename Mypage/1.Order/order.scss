@@ -24,13 +24,13 @@ body {
       button {
         width: 200px;
         height: 100%;
+        border: none;
         &:nth-child(1) {
           background: $Textcolor-black;
           color: #fff;
         }
         &:nth-child(2) {
           color: $Textcolor-gray;
-          border: none;
           border-right: 1px solid $Color-stroke;
           background: transparent;
         }
@@ -121,14 +121,13 @@ body {
             border-right: none;
           }
         }
-        &:last-child {
-          border: none;
-          background: transparent;
-          li {
-            width:1200px;
-            border: none;
-          }
-        }
+      }
+      .order_lastli {
+        width:1200px;
+        border: none;
+        text-align: center;
+        font-size: 13px;
+        padding: 50px;
       }
     }
   }
